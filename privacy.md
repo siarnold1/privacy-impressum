@@ -109,8 +109,7 @@ If we add features in the future that change how data is handled (for example, o
 
 If you have questions about this policy or your data:
 
-**[Your name / company name]**
-**Email:** privacy@urbanwhispers.me
-**Website:** www.urbanwhispers.me
+**Simon Arnold**
+**Email:** simon.arnold@mailbox.org
 
 Imprint / legal notice: www.urbanwhispers.me/impressum
