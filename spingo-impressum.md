@@ -44,4 +44,4 @@ The content and works created by the site operator on these pages and in the app
 
 ---
 
-*Privacy: see our [Privacy Policy](https://github.com/siarnold1/privacy-impressum/blob/main/spingo-privacy)*
+*Privacy: see our [Privacy Policy](https://github.com/siarnold1/privacy-impressum/blob/main/spingo-privacy.md)*
