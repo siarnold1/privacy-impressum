@@ -4,7 +4,7 @@
 
 **Effective date:** November 2, 2026 · applies to Urban Whispers version 1.1 and later
 
-Urban Whispers ("the App", "we") is an audio city guide with a city game: you listen to stories, collect stamps, solve riddles, plan trips and save places. **Every feature works as a guest; an account is optional.** This policy explains which data the App processes, why, how long it is kept, and what your rights are.
+Urban Whispers ("the App", "we") is an audio city guide with a city game: you listen to stories, collect stamps, solve riddles, plan trips and save places. **Every feature works without an account; version 1.1 has no sign-in.** This policy explains which data the App processes, why, how long it is kept, and what your rights are.
 
 **Controller:** Simon Arnold, Landsberger Straße 119, 80339 München, Germany · simon.arnold@mailbox.org. We have not appointed a data protection officer, as we are not required to.
 
@@ -12,13 +12,13 @@ Urban Whispers ("the App", "we") is an audio city guide with a city game: you li
 
 ## 1. The Short Version
 
-- **Account optional.** Every feature works without an account. If you choose to sign in with Apple or Google, we store your email address and your game progress, saved places and trips so you can back them up and restore them on another device.
+- **Sign-in comes later.** Version 1.1 has no sign-in yet. Your game progress, saved places and trips stay on your iPhone and are not sent to us. We plan to offer an optional sign-in with Apple or Google in a later version; Sections 3.1 and 3.2 describe what will apply then.
 - **Your location stays on your device.** The Nearby tab uses your location only while it is open, and the distances are calculated on your iPhone. Your coordinates are never sent to us, never stored and never logged.
 - **Your photos, notes and trip documents stay on your device.** They are never uploaded, not even when you are signed in.
 - **Usage statistics only with your consent.** The App asks you once ("Help improve Urban Whispers"). Only if you allow it does it send a few pseudonymous usage events. You can withdraw your consent at any time in **Settings › Privacy** (details in 3.3).
 - **Crash reports can be turned off.** Crash reports help us fix errors. They are on by default and you can turn them off in **Settings › Privacy** (details in 3.4).
 - **No advertising, no cross-app tracking.** We do not use advertising or tracking SDKs, and we do not access the advertising identifier (IDFA).
-- **Delete any time.** Settings › Account › Delete account deletes your account and all data stored for it on our servers.
+- **Delete any time.** Your progress, trips, photos and notes live on your iPhone; deleting them in the App or uninstalling the App removes them. Once accounts are available, Settings › Account › Delete account will delete your account and all data stored for it on our servers.
 
 ---
 
@@ -38,7 +38,9 @@ We do not collect, request or store:
 
 ## 3. Data We Do Process
 
-### 3.1 Account (optional)
+### 3.1 Account (planned for a later version)
+
+**Not available in version 1.1.** The App currently offers no sign-in, so we do not receive or store any of the data listed in this section. It describes what will apply once we offer an optional sign-in.
 
 You can sign in with **Sign in with Apple** or **Google** (Settings › Account, the "Back up your progress" card in the Passport, or the one-time "Keep your stamps safe" hint). Signing in is never required. If you sign in, we receive and store:
 
@@ -53,7 +55,9 @@ Your login session (access and refresh tokens) is stored in the iOS Keychain on 
 
 We do not use your email address for newsletters or marketing.
 
-### 3.2 Sync (only when signed in)
+### 3.2 Sync (only when signed in, planned for a later version)
+
+**Not available in version 1.1** (see 3.1). Nothing is synced; your data stays on your iPhone.
 
 When you are signed in, the App backs up the following data to your account and keeps it in sync across your devices:
 
@@ -184,14 +188,16 @@ We do **not sell** data, do **not share** it with advertisers and do **not track
 |---|---|---|
 | Supabase Inc. | Database, sign-in, sync, usage statistics, content delivery | Servers in Frankfurt, Germany (EU); processor under a data processing agreement |
 | Sentry (Functional Software, Inc.) | Crash reports, app-session stability data | EU infrastructure (Germany); processor under a data processing agreement |
-| Apple Inc. / Apple Distribution International Ltd. | Sign in with Apple (if you choose it), address search (3.5) | Apple processes this data as an independent controller under its own privacy policy |
-| Google (Google Ireland Ltd. / Google LLC) | Sign in with Google (if you choose it) | Google processes your sign-in as an independent controller under its own privacy policy |
+| Apple Inc. / Apple Distribution International Ltd. | Address search (3.5); Sign in with Apple once available (3.1) | Apple processes this data as an independent controller under its own privacy policy |
+| Google (Google Ireland Ltd. / Google LLC) | Sign in with Google once available (3.1) | Google processes your sign-in as an independent controller under its own privacy policy |
 
 **Third countries:** Supabase Inc. and Functional Software, Inc. are companies based in the USA. We use their EU hosting. Where data could still be accessed from outside the EU, the transfer is covered by the **EU-U.S. Data Privacy Framework** (where the provider is certified) and/or the **EU Standard Contractual Clauses**, which are part of the data processing agreements.
 
 ---
 
 ## 9. Data Retention, Sign-out and Account Deletion
+
+Version 1.1 has no sign-in, so the rows on accounts and synced data, sign-out and account deletion apply only once accounts are available (see 3.1).
 
 | Data | How long |
 |---|---|
@@ -267,7 +273,7 @@ Imprint / legal notice: [Legal notice](https://github.com/siarnold1/privacy-impr
 
 **Gültig ab:** 2. November 2026 · gilt für Urban Whispers ab Version 1.1
 
-Urban Whispers („die App“, „wir“) ist ein Audio-Stadtführer mit Stadtspiel: Du hörst Geschichten, sammelst Stempel, löst Rätsel, planst Reisen und merkst Dir Orte. **Jede Funktion funktioniert als Gast; ein Konto ist freiwillig.** Diese Erklärung beschreibt, welche Daten die App verarbeitet, warum, wie lange sie gespeichert werden und welche Rechte Du hast. Die englische und die deutsche Fassung sind inhaltlich gleich; die Namen von Schaltern und Seiten stehen auf Englisch, so wie sie in der App erscheinen.
+Urban Whispers („die App“, „wir“) ist ein Audio-Stadtführer mit Stadtspiel: Du hörst Geschichten, sammelst Stempel, löst Rätsel, planst Reisen und merkst Dir Orte. **Jede Funktion funktioniert ohne Konto; Version 1.1 bietet keine Anmeldung.** Diese Erklärung beschreibt, welche Daten die App verarbeitet, warum, wie lange sie gespeichert werden und welche Rechte Du hast. Die englische und die deutsche Fassung sind inhaltlich gleich; die Namen von Schaltern und Seiten stehen auf Englisch, so wie sie in der App erscheinen.
 
 **Verantwortlicher:** Simon Arnold, Landsberger Straße 119, 80339 München, Deutschland · simon.arnold@mailbox.org. Ein Datenschutzbeauftragter ist nicht bestellt, da keine Pflicht dazu besteht.
 
@@ -275,13 +281,13 @@ Urban Whispers („die App“, „wir“) ist ein Audio-Stadtführer mit Stadtsp
 
 ## 1. Kurzfassung
 
-- **Konto freiwillig.** Jede Funktion funktioniert ohne Konto. Wenn Du Dich mit Apple oder Google anmeldest, speichern wir Deine E-Mail-Adresse sowie Deinen Spielfortschritt, Deine gemerkten Orte und Reisen, damit Du sie sichern und auf einem anderen Gerät wiederherstellen kannst.
+- **Anmeldung kommt später.** Version 1.1 bietet noch keine Anmeldung. Dein Spielfortschritt, Deine gemerkten Orte und Reisen bleiben auf Deinem iPhone und werden nicht an uns gesendet. Eine freiwillige Anmeldung mit Apple oder Google planen wir für eine spätere Version; die Abschnitte 3.1 und 3.2 beschreiben, was dann gilt.
 - **Dein Standort bleibt auf Deinem Gerät.** Der Tab „Nearby“ nutzt Deinen Standort nur, solange er geöffnet ist; die Entfernungen werden auf Deinem iPhone berechnet. Deine Koordinaten werden nie an uns gesendet, nie gespeichert und nie protokolliert.
 - **Deine Fotos, Notizen und Reise-Dokumente bleiben auf Deinem Gerät.** Sie werden nie hochgeladen, auch nicht, wenn Du angemeldet bist.
 - **Nutzungsstatistik nur mit Deiner Einwilligung.** Die App fragt Dich einmal („Help improve Urban Whispers“). Nur wenn Du zustimmst, sendet sie einige pseudonyme Nutzungsereignisse. Den Widerruf kannst Du jederzeit unter **Settings › Privacy** erklären (Details in 3.3).
 - **Absturzberichte lassen sich abschalten.** Absturzberichte helfen uns, Fehler zu beheben. Sie sind standardmäßig an und lassen sich unter **Settings › Privacy** ausschalten (Details in 3.4).
 - **Keine Werbung, kein app-übergreifendes Tracking.** Wir nutzen keine Werbe- oder Tracking-SDKs und greifen nicht auf die Werbe-ID (IDFA) zu.
-- **Jederzeit löschen.** Settings › Account › Delete account löscht Dein Konto und alle dazu auf unseren Servern gespeicherten Daten.
+- **Jederzeit löschen.** Fortschritt, Reisen, Fotos und Notizen liegen auf Deinem iPhone; Du löschst sie in der App oder indem Du die App entfernst. Sobald es Konten gibt, löscht Settings › Account › Delete account Dein Konto und alle dazu auf unseren Servern gespeicherten Daten.
 
 ---
 
@@ -301,7 +307,9 @@ Wir erheben, erfragen oder speichern nicht:
 
 ## 3. Daten, die wir verarbeiten
 
-### 3.1 Konto (freiwillig)
+### 3.1 Konto (für eine spätere Version geplant)
+
+**In Version 1.1 nicht verfügbar.** Die App bietet derzeit keine Anmeldung; wir erhalten und speichern daher keine der in diesem Abschnitt genannten Daten. Er beschreibt, was gilt, sobald wir eine freiwillige Anmeldung anbieten.
 
 Du kannst Dich mit **Sign in with Apple** oder **Google** anmelden (Settings › Account, die Karte „Back up your progress“ im Passport oder der einmalige Hinweis „Keep your stamps safe“). Eine Anmeldung ist nie erforderlich. Wenn Du Dich anmeldest, erhalten und speichern wir:
 
@@ -316,7 +324,9 @@ Deine Anmeldesitzung (Access- und Refresh-Token) wird im iOS-Schlüsselbund auf 
 
 Wir nutzen Deine E-Mail-Adresse nicht für Newsletter oder Werbung.
 
-### 3.2 Synchronisierung (nur mit Anmeldung)
+### 3.2 Synchronisierung (nur mit Anmeldung, für eine spätere Version geplant)
+
+**In Version 1.1 nicht verfügbar** (siehe 3.1). Es wird nichts synchronisiert; Deine Daten bleiben auf Deinem iPhone.
 
 Wenn Du angemeldet bist, sichert die App folgende Daten in Deinem Konto und hält sie auf Deinen Geräten synchron:
 
@@ -447,14 +457,16 @@ Wir **verkaufen keine** Daten, geben sie **nicht an Werbetreibende** weiter und 
 |---|---|---|
 | Supabase Inc. | Datenbank, Anmeldung, Synchronisierung, Nutzungsstatistik, Auslieferung der Inhalte | Server in Frankfurt (EU); Auftragsverarbeiter mit Auftragsverarbeitungsvertrag |
 | Sentry (Functional Software, Inc.) | Absturzberichte, Stabilitätsdaten zu App-Sitzungen | EU-Infrastruktur (Deutschland); Auftragsverarbeiter mit Auftragsverarbeitungsvertrag |
-| Apple Inc. / Apple Distribution International Ltd. | Sign in with Apple (wenn Du es wählst), Adresssuche (3.5) | Apple verarbeitet diese Daten als eigener Verantwortlicher nach seiner Datenschutzerklärung |
-| Google (Google Ireland Ltd. / Google LLC) | Anmeldung mit Google (wenn Du sie wählst) | Google verarbeitet die Anmeldung als eigener Verantwortlicher nach seiner Datenschutzerklärung |
+| Apple Inc. / Apple Distribution International Ltd. | Adresssuche (3.5); Sign in with Apple, sobald verfügbar (3.1) | Apple verarbeitet diese Daten als eigener Verantwortlicher nach seiner Datenschutzerklärung |
+| Google (Google Ireland Ltd. / Google LLC) | Anmeldung mit Google, sobald verfügbar (3.1) | Google verarbeitet die Anmeldung als eigener Verantwortlicher nach seiner Datenschutzerklärung |
 
 **Drittländer:** Supabase Inc. und Functional Software, Inc. haben ihren Sitz in den USA. Wir nutzen ihr Hosting in der EU. Soweit dennoch ein Zugriff von außerhalb der EU möglich ist, ist die Übermittlung durch das **EU-US Data Privacy Framework** (soweit der Anbieter zertifiziert ist) und/oder die **EU-Standardvertragsklauseln** abgesichert, die Teil der Auftragsverarbeitungsverträge sind.
 
 ---
 
 ## 9. Speicherdauer, Abmelden und Kontolöschung
+
+Version 1.1 bietet keine Anmeldung; die Zeilen zu Konto und synchronisierten Daten sowie Abmelden und Kontolöschung gelten erst, sobald es Konten gibt (siehe 3.1).
 
 | Daten | Wie lange |
 |---|---|
