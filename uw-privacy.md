@@ -111,7 +111,7 @@ Crash reports are configured to **exclude personal information**: they contain n
 
 - **Switch "Send crash reports"** in **Settings › Privacy**: on by default. Turning it off takes effect immediately for the rest of the session. Turning it back on takes effect the next time you start the App.
 - **Limitation:** if the App crashed before you turned the switch off, the report for that crash may still be stored on your iPhone. It is only sent if you turn the switch on again.
-- **App-session stability data** (whether App sessions end normally or with a crash, also called release health) is only sent if you have agreed to usage statistics (3.3). If you withdraw that consent, sending it stops immediately.
+- **App-session stability data** (whether App sessions end normally or with a crash, also called release health) is only sent if you have agreed to usage statistics (3.3). If you withdraw that consent, sending it stops immediately; only the session that is running at that moment is reported once more as ended, then nothing further is sent.
 
 ### 3.5 Address Search (trip planner)
 
@@ -380,7 +380,7 @@ Absturzberichte sind so eingestellt, dass sie **keine personenbezogenen Angaben*
 
 - **Schalter „Send crash reports“** unter **Settings › Privacy**: standardmäßig an. Das Ausschalten wirkt sofort für den Rest der Sitzung. Das Wiedereinschalten wirkt ab dem nächsten Start der App.
 - **Einschränkung:** Ist die App abgestürzt, bevor Du den Schalter ausgeschaltet hast, kann der Bericht zu diesem Absturz noch auf Deinem iPhone liegen. Er wird erst gesendet, wenn Du den Schalter wieder einschaltest.
-- **Stabilitätsdaten zu App-Sitzungen** (ob Sitzungen normal oder mit einem Absturz enden, sogenannte Release Health) werden nur gesendet, wenn Du in die Nutzungsstatistik eingewilligt hast (3.3). Widerrufst Du diese Einwilligung, endet auch dieses Senden sofort.
+- **Stabilitätsdaten zu App-Sitzungen** (ob Sitzungen normal oder mit einem Absturz enden, sogenannte Release Health) werden nur gesendet, wenn Du in die Nutzungsstatistik eingewilligt hast (3.3). Widerrufst Du diese Einwilligung, endet auch dieses Senden sofort; nur die gerade laufende Sitzung wird dabei noch einmal als beendet gemeldet, danach wird nichts mehr gesendet.
 
 ### 3.5 Adresssuche (Reiseplaner)
 
