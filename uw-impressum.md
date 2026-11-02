@@ -16,11 +16,6 @@ Simon Arnold
 Landsberger Straße 119
 80339 München
 
-## EU Dispute Resolution
-
-The European Commission provides a platform for online dispute resolution (ODR): [https://ec.europa.eu/consumers/odr/](https://ec.europa.eu/consumers/odr/)
-Our email address can be found above in this legal notice.
-
 ## Consumer Dispute Resolution
 
 We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.
