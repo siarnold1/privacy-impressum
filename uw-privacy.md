@@ -2,7 +2,7 @@
 
 # Privacy Policy — Urban Whispers
 
-**Effective date:** November 2, 2026 · applies to Urban Whispers version 1.1 and later
+**Effective date:** November 3, 2026 · applies to Urban Whispers version 1.1 and later
 
 Urban Whispers ("the App", "we") is an audio city guide with a city game: you listen to stories, collect stamps, solve riddles, plan trips and save places. **Every feature works without an account; version 1.1 has no sign-in.** This policy explains which data the App processes, why, how long it is kept, and what your rights are.
 
@@ -63,7 +63,7 @@ When you are signed in, the App backs up the following data to your account and 
 
 - **Game progress:** events such as collected stamps, completed challenges, riddle answers, used hints, solved riddles and unlocked badges. Each event has a time, the attraction, riddle or city it belongs to, and the XP it earned. Your level, streaks and badges are calculated from these events.
 - **Saved places (Bucket List):** which places and episodes you saved, with a short snapshot (title, city) and the time you saved or removed them.
-- **Trips:** the city, start date, number of days, your day plan, whether the morning-plan reminder is on, and when the trip was created or changed. This includes the names of **your own places** that you add to a trip (free text, up to 80 characters). Please keep in mind that free text can contain personal information if you type it in.
+- **Trips:** the city, start date, number of days, your day plan, whether the morning-plan reminder is on, and when the trip was created or changed. This includes **your own places** that you add to a trip: their name (up to 80 characters) and, for a place picked from Apple's place search (3.5), its address and map coordinates. Please keep in mind that free text can contain personal information if you type it in.
 
 When you remove a saved place or a trip, it is marked as deleted so the removal also reaches your other devices. These markers are removed when you delete your account.
 
@@ -95,7 +95,6 @@ Each event contains only the event type, content IDs and simple counters (for ex
 - Events **never** contain your location, email address or name. Our server also removes any location, email or name fields before it stores an event.
 - Events are **never connected to your account**, not even when you are signed in.
 - If you are offline, up to 50 events wait on your iPhone and are sent later.
-- With your consent, the App also sends anonymous app-session stability data to Sentry (see 3.4).
 
 We look at this data only in aggregate. Usage events are stored for **24 months** and then deleted automatically.
 
@@ -111,11 +110,16 @@ Crash reports are configured to **exclude personal information**: they contain n
 
 - **Switch "Send crash reports"** in **Settings › Privacy**: on by default. Turning it off takes effect immediately for the rest of the session. Turning it back on takes effect the next time you start the App.
 - **Limitation:** if the App crashed before you turned the switch off, the report for that crash may still be stored on your iPhone. It is only sent if you turn the switch on again.
-- **App-session stability data** (whether App sessions end normally or with a crash, also called release health) is only sent if you have agreed to usage statistics (3.3). If you withdraw that consent, sending it stops immediately; only the session that is running at that moment is reported once more as ended, then nothing further is sent.
+- **Automatic app-session stability tracking** (Sentry Release Health) is disabled. Your choice about usage statistics does not turn on Sentry sessions; the separate crash-report switch controls crash reports.
 
-### 3.5 Address Search (trip planner)
+### 3.5 Address and Place Search (trip planner)
 
-In the trip planner you can search for the place where you are staying ("Where are you staying?"). The text you type, together with the name of the city, is sent to **Apple's geocoding service** (the address search built into iOS) to find matching addresses. This does not require location permission. The App does not send this text to us and does not store the text or the result; it is only kept in memory while you search. Apple processes the request under its own privacy policy.
+The trip planner uses two search services built into iOS. Neither needs location permission, and your own location is never part of a request:
+
+- **Where you are staying** ("Where are you staying?"): the text you type, together with the name of the city, is sent to **Apple's geocoding service** (the address search built into iOS) to find matching addresses. The App does not store the text or the result; both are only kept in memory while you search.
+- **Your own places:** when you add your own place to a trip, the text you type and the centre of the trip's city are sent to **Apple's place search** (Apple Maps) to suggest matching places nearby. If you pick a suggestion, the App saves its name, address and map coordinates with the trip on your iPhone, so it can show walking distances, arrange your days and open directions. If you add a place without picking a suggestion, only the text you typed is saved.
+
+The App does not send your search text to us. Apple processes these requests under its own privacy policy.
 
 ### 3.6 Loading Content
 
@@ -170,7 +174,7 @@ More about how the content is made, and how to report an error, is on the page *
 | Processing | Legal basis |
 |---|---|
 | **Account, sync and account deletion** (3.1, 3.2, Section 9), including storing the Apple token so we can revoke it on deletion | Performance of the service you asked for: **Art. 6(1)(b) GDPR** |
-| **Usage statistics** (3.3) and **app-session stability data** sent to Sentry (3.4) | Your **consent**: **Art. 6(1)(a) GDPR**; storing and reading this information on your device: **§ 25(1) TDDDG**. You can withdraw your consent at any time (Art. 7(3) GDPR) in Settings › Privacy. |
+| **Usage statistics** (3.3) | Your **consent**: **Art. 6(1)(a) GDPR**; storing and reading this information on your device: **§ 25(1) TDDDG**. You can withdraw your consent at any time (Art. 7(3) GDPR) in Settings › Privacy. |
 | **Crash reports** (3.4) | Our **legitimate interest** in keeping the App stable and finding and fixing errors: **Art. 6(1)(f) GDPR**; the device access needed for this: **§ 25(2) No. 2 TDDDG**. You can object (Section 10) or simply turn the switch off. |
 | **Loading content and operating the backend** (3.6), including the technical processing of IP addresses | Our **legitimate interest** in delivering the content you request and keeping our servers secure: **Art. 6(1)(f) GDPR**; **§ 25(2) No. 2 TDDDG** |
 | **Storage on your device** (3.7) | Only what the App needs to provide the features you use: **§ 25(2) No. 2 TDDDG** |
@@ -187,7 +191,7 @@ We do **not sell** data, do **not share** it with advertisers and do **not track
 | Provider | Purpose | Location / role |
 |---|---|---|
 | Supabase Inc. | Database, sign-in, sync, usage statistics, content delivery | Servers in Frankfurt, Germany (EU); processor under a data processing agreement |
-| Sentry (Functional Software, Inc.) | Crash reports, app-session stability data | EU infrastructure (Germany); processor under a data processing agreement |
+| Sentry (Functional Software, Inc.) | Crash reports | EU infrastructure (Germany); processor under a data processing agreement |
 | Apple Inc. / Apple Distribution International Ltd. | Address search (3.5); Sign in with Apple once available (3.1) | Apple processes this data as an independent controller under its own privacy policy |
 | Google (Google Ireland Ltd. / Google LLC) | Sign in with Google once available (3.1) | Google processes your sign-in as an independent controller under its own privacy policy |
 
@@ -204,7 +208,7 @@ Version 1.1 has no sign-in, so the rows on accounts and synced data, sign-out an
 | Account and synced data (3.1, 3.2) | As long as your account exists; deleted immediately when you delete your account |
 | Server backups | Deleted data can remain in our provider's encrypted backups for a short time until those backups are overwritten |
 | Usage events (3.3) | **24 months**, then deleted automatically. Events not yet sent are deleted from your iPhone when you withdraw consent. |
-| Crash reports and app-session stability data (3.4) | **90 days**, then deleted automatically by Sentry |
+| Crash reports (3.4) | **90 days**, then deleted automatically by Sentry |
 | Data on your device (3.7, Sections 4, 5) | Under your control; deleted when you delete it in the App or uninstall the App |
 
 - **Sign-out:** the App first syncs your latest progress. If that is not possible (for example offline), it asks whether you want to sign out anyway. It then ends your session and resets game progress, Bucket List, trips and riddle progress **on this iPhone** to an empty guest state. Downloads, photos, notes and trip documents stay. Your data remains in your account, and signing in again restores it.
@@ -271,7 +275,7 @@ Imprint / legal notice: [Legal notice](https://github.com/siarnold1/privacy-impr
 
 # Datenschutzerklärung – Urban Whispers
 
-**Gültig ab:** 2. November 2026 · gilt für Urban Whispers ab Version 1.1
+**Gültig ab:** 3. November 2026 · gilt für Urban Whispers ab Version 1.1
 
 Urban Whispers („die App“, „wir“) ist ein Audio-Stadtführer mit Stadtspiel: Du hörst Geschichten, sammelst Stempel, löst Rätsel, planst Reisen und merkst Dir Orte. **Jede Funktion funktioniert ohne Konto; Version 1.1 bietet keine Anmeldung.** Diese Erklärung beschreibt, welche Daten die App verarbeitet, warum, wie lange sie gespeichert werden und welche Rechte Du hast. Die englische und die deutsche Fassung sind inhaltlich gleich; die Namen von Schaltern und Seiten stehen auf Englisch, so wie sie in der App erscheinen.
 
@@ -332,7 +336,7 @@ Wenn Du angemeldet bist, sichert die App folgende Daten in Deinem Konto und häl
 
 - **Spielfortschritt:** Ereignisse wie gesammelte Stempel, abgeschlossene Challenges, Rätselantworten, genutzte Tipps, gelöste Rätsel und freigeschaltete Abzeichen. Jedes Ereignis enthält einen Zeitpunkt, die zugehörige Attraktion, das Rätsel oder die Stadt und die dafür erhaltenen XP. Level, Serien und Abzeichen werden aus diesen Ereignissen berechnet.
 - **Gemerkte Orte (Bucket List):** welche Orte und Episoden Du gemerkt hast, mit einer kurzen Momentaufnahme (Titel, Stadt) und dem Zeitpunkt des Merkens oder Entfernens.
-- **Reisen:** Stadt, Startdatum, Anzahl der Tage, Dein Tagesplan, ob die Morgen-Erinnerung an ist und wann die Reise angelegt oder geändert wurde. Dazu gehören auch die Namen **eigener Orte**, die Du einer Reise hinzufügst (Freitext, bis 80 Zeichen). Bitte bedenke, dass Freitext personenbezogene Angaben enthalten kann, wenn Du sie eintippst.
+- **Reisen:** Stadt, Startdatum, Anzahl der Tage, Dein Tagesplan, ob die Morgen-Erinnerung an ist und wann die Reise angelegt oder geändert wurde. Dazu gehören auch **eigene Orte**, die Du einer Reise hinzufügst: ihr Name (bis 80 Zeichen) und bei einem Ort aus der Ortssuche von Apple (3.5) seine Adresse und Kartenkoordinaten. Bitte bedenke, dass Freitext personenbezogene Angaben enthalten kann, wenn Du sie eintippst.
 
 Wenn Du einen gemerkten Ort oder eine Reise entfernst, wird der Eintrag als gelöscht markiert, damit das Entfernen auch Deine anderen Geräte erreicht. Diese Markierungen werden beim Löschen Deines Kontos entfernt.
 
@@ -364,7 +368,6 @@ Jedes Ereignis enthält nur den Ereignistyp, Inhalts-IDs und einfache Zähler (z
 - Ereignisse enthalten **nie** Deinen Standort, Deine E-Mail-Adresse oder Deinen Namen. Unser Server entfernt solche Felder zusätzlich, bevor er ein Ereignis speichert.
 - Ereignisse werden **nie mit Deinem Konto verknüpft**, auch nicht, wenn Du angemeldet bist.
 - Ohne Internetverbindung warten bis zu 50 Ereignisse auf Deinem iPhone und werden später gesendet.
-- Mit Deiner Einwilligung sendet die App außerdem anonyme Stabilitätsdaten zu App-Sitzungen an Sentry (siehe 3.4).
 
 Wir werten diese Daten nur zusammengefasst aus. Nutzungsereignisse werden **24 Monate** gespeichert und danach automatisch gelöscht.
 
@@ -380,11 +383,16 @@ Absturzberichte sind so eingestellt, dass sie **keine personenbezogenen Angaben*
 
 - **Schalter „Send crash reports“** unter **Settings › Privacy**: standardmäßig an. Das Ausschalten wirkt sofort für den Rest der Sitzung. Das Wiedereinschalten wirkt ab dem nächsten Start der App.
 - **Einschränkung:** Ist die App abgestürzt, bevor Du den Schalter ausgeschaltet hast, kann der Bericht zu diesem Absturz noch auf Deinem iPhone liegen. Er wird erst gesendet, wenn Du den Schalter wieder einschaltest.
-- **Stabilitätsdaten zu App-Sitzungen** (ob Sitzungen normal oder mit einem Absturz enden, sogenannte Release Health) werden nur gesendet, wenn Du in die Nutzungsstatistik eingewilligt hast (3.3). Widerrufst Du diese Einwilligung, endet auch dieses Senden sofort; nur die gerade laufende Sitzung wird dabei noch einmal als beendet gemeldet, danach wird nichts mehr gesendet.
+- **Automatische Stabilitätsdaten zu App-Sitzungen** (Sentry Release Health) sind deaktiviert. Deine Wahl zur Nutzungsstatistik aktiviert keine Sentry-Sitzungen; für Absturzberichte gilt der separate Schalter.
 
-### 3.5 Adresssuche (Reiseplaner)
+### 3.5 Adress- und Ortssuche (Reiseplaner)
 
-Im Reiseplaner kannst Du nach Deiner Unterkunft suchen („Where are you staying?“). Der eingegebene Text wird zusammen mit dem Namen der Stadt an den **Geocoding-Dienst von Apple** (die in iOS eingebaute Adresssuche) gesendet, um passende Adressen zu finden. Dafür ist keine Standortberechtigung nötig. Die App sendet den Text nicht an uns und speichert weder den Text noch das Ergebnis; beides wird nur während der Suche im Arbeitsspeicher gehalten. Apple verarbeitet die Anfrage nach seiner eigenen Datenschutzerklärung.
+Der Reiseplaner nutzt zwei in iOS eingebaute Suchdienste. Für keinen ist eine Standortberechtigung nötig, und Dein eigener Standort ist nie Teil einer Anfrage:
+
+- **Deine Unterkunft** („Where are you staying?“): Der eingegebene Text wird zusammen mit dem Namen der Stadt an den **Geocoding-Dienst von Apple** (die in iOS eingebaute Adresssuche) gesendet, um passende Adressen zu finden. Die App speichert weder den Text noch das Ergebnis; beides wird nur während der Suche im Arbeitsspeicher gehalten.
+- **Eigene Orte:** Wenn Du einer Reise einen eigenen Ort hinzufügst, werden der eingegebene Text und der Mittelpunkt der Reisestadt an die **Ortssuche von Apple** (Apple Karten) gesendet, um passende Orte in der Nähe vorzuschlagen. Wählst Du einen Vorschlag, speichert die App dessen Namen, Adresse und Kartenkoordinaten mit der Reise auf Deinem iPhone, damit sie Fußwege anzeigen, Deine Tage ordnen und die Navigation öffnen kann. Fügst Du einen Ort ohne Vorschlag hinzu, wird nur der eingegebene Text gespeichert.
+
+Die App sendet Deinen Suchtext nicht an uns. Apple verarbeitet diese Anfragen nach seiner eigenen Datenschutzerklärung.
 
 ### 3.6 Laden von Inhalten
 
@@ -439,7 +447,7 @@ Mehr über die Entstehung der Inhalte und wie Du Fehler melden kannst, steht in 
 | Verarbeitung | Rechtsgrundlage |
 |---|---|
 | **Konto, Synchronisierung und Kontolöschung** (3.1, 3.2, Abschnitt 9), einschließlich der Speicherung des Apple-Tokens für den Widerruf bei der Löschung | Erfüllung des von Dir gewünschten Dienstes: **Art. 6 Abs. 1 lit. b DSGVO** |
-| **Nutzungsstatistik** (3.3) und **Stabilitätsdaten zu App-Sitzungen** an Sentry (3.4) | Deine **Einwilligung**: **Art. 6 Abs. 1 lit. a DSGVO**; Speichern und Auslesen dieser Informationen auf Deinem Gerät: **§ 25 Abs. 1 TDDDG**. Den Widerruf kannst Du jederzeit unter Settings › Privacy erklären (Art. 7 Abs. 3 DSGVO). |
+| **Nutzungsstatistik** (3.3) | Deine **Einwilligung**: **Art. 6 Abs. 1 lit. a DSGVO**; Speichern und Auslesen dieser Informationen auf Deinem Gerät: **§ 25 Abs. 1 TDDDG**. Den Widerruf kannst Du jederzeit unter Settings › Privacy erklären (Art. 7 Abs. 3 DSGVO). |
 | **Absturzberichte** (3.4) | Unser **berechtigtes Interesse**, die App stabil zu halten und Fehler zu finden und zu beheben: **Art. 6 Abs. 1 lit. f DSGVO**; der dafür nötige Zugriff auf das Endgerät: **§ 25 Abs. 2 Nr. 2 TDDDG**. Du kannst widersprechen (Abschnitt 10) oder einfach den Schalter ausschalten. |
 | **Laden von Inhalten und Betrieb des Backends** (3.6), einschließlich der technischen Verarbeitung von IP-Adressen | Unser **berechtigtes Interesse**, die von Dir angefragten Inhalte auszuliefern und unsere Server sicher zu betreiben: **Art. 6 Abs. 1 lit. f DSGVO**; **§ 25 Abs. 2 Nr. 2 TDDDG** |
 | **Speicherung auf Deinem Gerät** (3.7) | Nur, was die App für die von Dir genutzten Funktionen braucht: **§ 25 Abs. 2 Nr. 2 TDDDG** |
@@ -456,7 +464,7 @@ Wir **verkaufen keine** Daten, geben sie **nicht an Werbetreibende** weiter und 
 | Anbieter | Zweck | Ort / Rolle |
 |---|---|---|
 | Supabase Inc. | Datenbank, Anmeldung, Synchronisierung, Nutzungsstatistik, Auslieferung der Inhalte | Server in Frankfurt (EU); Auftragsverarbeiter mit Auftragsverarbeitungsvertrag |
-| Sentry (Functional Software, Inc.) | Absturzberichte, Stabilitätsdaten zu App-Sitzungen | EU-Infrastruktur (Deutschland); Auftragsverarbeiter mit Auftragsverarbeitungsvertrag |
+| Sentry (Functional Software, Inc.) | Absturzberichte | EU-Infrastruktur (Deutschland); Auftragsverarbeiter mit Auftragsverarbeitungsvertrag |
 | Apple Inc. / Apple Distribution International Ltd. | Adresssuche (3.5); Sign in with Apple, sobald verfügbar (3.1) | Apple verarbeitet diese Daten als eigener Verantwortlicher nach seiner Datenschutzerklärung |
 | Google (Google Ireland Ltd. / Google LLC) | Anmeldung mit Google, sobald verfügbar (3.1) | Google verarbeitet die Anmeldung als eigener Verantwortlicher nach seiner Datenschutzerklärung |
 
@@ -473,7 +481,7 @@ Version 1.1 bietet keine Anmeldung; die Zeilen zu Konto und synchronisierten Dat
 | Konto und synchronisierte Daten (3.1, 3.2) | Solange Dein Konto besteht; sofortige Löschung, wenn Du Dein Konto löschst |
 | Server-Backups | Gelöschte Daten können für kurze Zeit in den verschlüsselten Backups unseres Anbieters verbleiben, bis diese überschrieben werden |
 | Nutzungsereignisse (3.3) | **24 Monate**, danach automatische Löschung. Noch nicht gesendete Ereignisse werden beim Widerruf auf Deinem iPhone gelöscht. |
-| Absturzberichte und Stabilitätsdaten zu App-Sitzungen (3.4) | **90 Tage**, danach automatische Löschung durch Sentry |
+| Absturzberichte (3.4) | **90 Tage**, danach automatische Löschung durch Sentry |
 | Daten auf Deinem Gerät (3.7, Abschnitte 4, 5) | In Deiner Hand; gelöscht, wenn Du sie in der App löschst oder die App entfernst |
 
 - **Abmelden:** Die App synchronisiert zuerst Deinen letzten Stand. Geht das nicht (zum Beispiel offline), fragt sie, ob Du Dich trotzdem abmelden willst. Danach beendet sie die Sitzung und setzt Spielfortschritt, Bucket List, Reisen und Rätselfortschritt **auf diesem iPhone** auf einen leeren Gaststand zurück. Downloads, Fotos, Notizen und Reise-Dokumente bleiben. Deine Daten bleiben in Deinem Konto; bei erneuter Anmeldung werden sie wiederhergestellt.
